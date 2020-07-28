@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".user.User_screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:src="@drawable/ic_home" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="User Homepage"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/TxtWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text="Welcome"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="25dp" />
+
+
+            <TextView
+                android:id="@+id/user_role"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:text="User"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/Txtusername"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/BtnViewProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="View Profile"
+            android:textColor="@color/colorTextWhite" />
+
+        <Button
+            android:id="@+id/BtnSearchFacility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Search Facility"
+            android:textColor="@color/colorTextWhite" />
+
+        <Button
+            android:id="@+id/BtnReservation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="See my reservations"
+            android:textColor="@color/colorTextWhite" />
+
+        <Button
+            android:id="@+id/BtnViewViolation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="View Violations"
+            android:textColor="@color/colorTextWhite" />
+
+        <Button
+            android:id="@+id/signout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Log out"
+            android:textColor="@color/colorTextWhite" />
+    </LinearLayout>
+</LinearLayout>
